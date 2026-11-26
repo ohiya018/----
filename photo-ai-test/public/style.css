@@ -1,0 +1,65 @@
+/* AI分析結果 */
+.analysis-cards {
+    display: grid;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.analysis-card {
+    background: #ffffff;
+    border: 1px solid #dfe5eb;
+    border-radius: 14px;
+    padding: 20px;
+    color: #263445;
+}
+
+.analysis-card h3 {
+    font-size: 16px;
+    margin: 0 0 12px;
+}
+
+.analysis-card p {
+    line-height: 1.8;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.category-label {
+    display: inline-block;
+    background: #e8f3ff;
+    color: #24649b;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.title-list {
+    display: grid;
+    gap: 10px;
+}
+
+.title-item {
+    padding: 12px;
+    background: #f6f8fa;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.copy-button {
+    margin-top: 12px;
+    padding: 8px 14px;
+    border: 1px solid #ccd5df;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background: #f0f5fa;
+}
+
+.copy-message {
+    color: #32815b;
+    font-size: 13px;
+    margin-top: 8px;
+}

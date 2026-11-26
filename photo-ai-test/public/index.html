@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>写真読み込みテスト</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css/destyle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>写真を選択</h1>
+
+    <input type="file" id="photo" accept="image/*">
+    <h2>写真についてのメモ</h2>
+    <textarea id="memo" placeholder="写真について覚えていること、感じたことなどを自由に書いてください。"></textarea>
+    <div>
+        <img id="preview" style="width: 100%; max-width: 400px;">
+    </div>
+
+    <button id="analyze">AIに写真を分析してもらう</button>
+
+    <p id="status"></p>
+
+    <h2>送信結果</h2>
+    <div id="result"></div>
+    <!-- 記事構成 -->
+    <section id="outline-section" hidden>
+        <h2>記事の構成</h2>
+
+        <div id="outline"></div>
+
+        <button id="create-article">この構成で記事を書く</button>
+    </section>
+
+    <!-- 記事を書くエリア -->
+    <section id="writing-section" hidden>
+        <h2>記事を書く</h2>
+        <!-- 記事タイトル -->
+        <div>
+            <label for="article-title">記事タイトル</label>
+            <input type="text" id="article-title" placeholder="記事のタイトルを入力してください">
+        </div>
+        <div id="writing-area"></div>
+    </section>
+
+    <!-- 記事プレビュー -->
+    <section id="preview-section" hidden>
+        <h2>記事プレビュー</h2>
+
+        <div id="article-preview"></div>
+
+        <button id="send-wordpress">WordPressに下書き保存</button>
+        <p id="wordpress-status"></p>
+    </section>
+
+    <button id="preview-button">記事を確認する</button>
+</body>
+</html>
